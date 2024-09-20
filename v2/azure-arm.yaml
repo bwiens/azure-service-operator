@@ -2292,6 +2292,8 @@ objectModelConfiguration:
           $armReference: false
     2020-02-02:
       ApplicationInsightsComponentProperties:
+        HockeyAppToken:
+          $isSecret: false
         WorkspaceResourceId:
           $armReference: true
       Component:
@@ -2300,6 +2302,8 @@ objectModelConfiguration:
         $generatedConfigs:
           ConnectionString: $.Status.ConnectionString
           InstrumentationKey: $.Status.InstrumentationKey
+        $azureGeneratedSecrets:
+          - HockeyAppToken
     2023-01-01:
       ActionGroup:
         $export: true
