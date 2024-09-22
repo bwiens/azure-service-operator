@@ -1573,6 +1573,12 @@ objectModelConfiguration:
   containerservice:
     $payloadType: explicitCollections
     2021-05-01:
+      ContainerServiceSshPublicKey:
+        KeyData:
+          $isSecret: false
+      ContainerServiceSshPublicKey_STATUS:
+        KeyData:
+          $isSecret: false
       ManagedCluster:
         $export: true
         $supportedFrom: v2.0.0-alpha.1
@@ -1613,6 +1619,12 @@ objectModelConfiguration:
         Id:
           $armReference: true
     2023-02-01:
+      ContainerServiceSshPublicKey:
+        KeyData:
+          $isSecret: false
+      ContainerServiceSshPublicKey_STATUS:
+        KeyData:
+          $isSecret: false
       ManagedCluster:
         $export: true
         $supportedFrom: v2.0.0
@@ -1666,6 +1678,9 @@ objectModelConfiguration:
     2023-10-01:
       ContainerServiceNetworkProfile_NetworkPlugin:
         $renameTo: NetworkPlugin
+      ContainerServiceSshPublicKey:
+        KeyData:
+          $isSecret: false
       DelegatedResource:
         ResourceId:
           $armReference: true
@@ -1704,13 +1719,19 @@ objectModelConfiguration:
       ManagedClusterWindowsProfile:
         AdminPassword:
           $isSecret: true
-      PrivateLinkResource:
-        Id:
-          $armReference: true
       ManagedClusters_TrustedAccessRoleBinding:
         $exportAs: TrustedAccessRoleBinding
         $supportedFrom: v2.8.0
+      PrivateLinkResource:
+        Id:
+          $armReference: true
     2023-11-02-preview:
+      ContainerServiceSshPublicKey:
+        KeyData:
+          $isSecret: false
+      ContainerServiceSshPublicKey_STATUS:
+        KeyData:
+          $isSecret: false
       DelegatedResource:
         ResourceId:
           $armReference: true
@@ -1752,6 +1773,12 @@ objectModelConfiguration:
         Id:
           $armReference: true
     2024-04-02-preview:
+      ContainerServiceSshPublicKey:
+        KeyData:
+          $isSecret: false
+      ContainerServiceSshPublicKey_STATUS:
+        KeyData:
+          $isSecret: false
       DelegatedResource:
         ResourceId:
           $armReference: true
@@ -1789,12 +1816,12 @@ objectModelConfiguration:
       ManagedClusterWindowsProfile:
         AdminPassword:
           $isSecret: true
-      PrivateLinkResource:
-        Id:
-          $armReference: true
       ManagedClusters_TrustedAccessRoleBinding:
         $exportAs: TrustedAccessRoleBinding
         $supportedFrom: v2.8.0
+      PrivateLinkResource:
+        Id:
+          $armReference: true
   datafactory:
     2018-06-01:
       PurviewConfiguration:
